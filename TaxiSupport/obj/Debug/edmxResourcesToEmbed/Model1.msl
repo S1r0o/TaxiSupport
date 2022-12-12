@@ -1,0 +1,261 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="Хранилище TaxiSupportModelContainer" CdmEntityContainer="Entities">
+    <EntitySetMapping Name="Appeal">
+      <EntityTypeMapping TypeName="TaxiSupportModel.Appeal">
+        <MappingFragment StoreEntitySet="Appeal">
+          <ScalarProperty Name="id_user" ColumnName="id user" />
+          <ScalarProperty Name="description" ColumnName="description" />
+          <ScalarProperty Name="importance" ColumnName="importance" />
+          <ScalarProperty Name="order" ColumnName="order" />
+          <ScalarProperty Name="date" ColumnName="date" />
+          <ScalarProperty Name="problem_type" ColumnName="problem type" />
+          <ScalarProperty Name="applicant" ColumnName="applicant" />
+          <ScalarProperty Name="status" ColumnName="status" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Applicant">
+      <EntityTypeMapping TypeName="TaxiSupportModel.Applicant">
+        <MappingFragment StoreEntitySet="Applicant">
+          <ScalarProperty Name="email" ColumnName="email" />
+          <ScalarProperty Name="phone" ColumnName="phone" />
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="id" ColumnName="id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Description_appeal">
+      <EntityTypeMapping TypeName="TaxiSupportModel.Description_appeal">
+        <MappingFragment StoreEntitySet="Description appeal">
+          <ScalarProperty Name="user" ColumnName="user" />
+          <ScalarProperty Name="date" ColumnName="date" />
+          <ScalarProperty Name="description" ColumnName="description" />
+          <ScalarProperty Name="id" ColumnName="id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Driver">
+      <EntityTypeMapping TypeName="TaxiSupportModel.Driver">
+        <MappingFragment StoreEntitySet="Driver">
+          <ScalarProperty Name="loyalty" ColumnName="loyalty" />
+          <ScalarProperty Name="image" ColumnName="image" />
+          <ScalarProperty Name="phone" ColumnName="phone" />
+          <ScalarProperty Name="employee_s_comment" ColumnName="employee's comment" />
+          <ScalarProperty Name="id_status_account" ColumnName="id status account" />
+          <ScalarProperty Name="car_number" ColumnName="car number" />
+          <ScalarProperty Name="rating" ColumnName="rating" />
+          <ScalarProperty Name="car_brand_and_model" ColumnName="car brand and model" />
+          <ScalarProperty Name="age" ColumnName="age" />
+          <ScalarProperty Name="patronymic" ColumnName="patronymic" />
+          <ScalarProperty Name="surname" ColumnName="surname" />
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="id" ColumnName="id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="FAQ">
+      <EntityTypeMapping TypeName="TaxiSupportModel.FAQ">
+        <MappingFragment StoreEntitySet="FAQ">
+          <ScalarProperty Name="date" ColumnName="date" />
+          <ScalarProperty Name="description" ColumnName="description" />
+          <ScalarProperty Name="title" ColumnName="title" />
+          <ScalarProperty Name="id" ColumnName="id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Importance">
+      <EntityTypeMapping TypeName="TaxiSupportModel.Importance">
+        <MappingFragment StoreEntitySet="Importance">
+          <ScalarProperty Name="description" ColumnName="description" />
+          <ScalarProperty Name="id" ColumnName="id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Judgment">
+      <EntityTypeMapping TypeName="TaxiSupportModel.Judgment">
+        <MappingFragment StoreEntitySet="Judgment">
+          <ScalarProperty Name="description" ColumnName="description" />
+          <ScalarProperty Name="id" ColumnName="id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Message">
+      <EntityTypeMapping TypeName="TaxiSupportModel.Message">
+        <MappingFragment StoreEntitySet="Message">
+          <ScalarProperty Name="id_order" ColumnName="id order" />
+          <ScalarProperty Name="time" ColumnName="time" />
+          <ScalarProperty Name="id_type_sender" ColumnName="id type sender" />
+          <ScalarProperty Name="description" ColumnName="description" />
+          <ScalarProperty Name="id" ColumnName="id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Options">
+      <EntityTypeMapping TypeName="TaxiSupportModel.Options">
+        <MappingFragment StoreEntitySet="Options">
+          <ScalarProperty Name="price" ColumnName="price" />
+          <ScalarProperty Name="description" ColumnName="description" />
+          <ScalarProperty Name="id" ColumnName="id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Order">
+      <EntityTypeMapping TypeName="TaxiSupportModel.Order">
+        <MappingFragment StoreEntitySet="Order">
+          <ScalarProperty Name="travel_time" ColumnName="travel time" />
+          <ScalarProperty Name="loyalty_for_the_order" ColumnName="loyalty for the order" />
+          <ScalarProperty Name="tariff_zone" ColumnName="tariff zone" />
+          <ScalarProperty Name="mileage" ColumnName="mileage" />
+          <ScalarProperty Name="driver_point" ColumnName="driver point" />
+          <ScalarProperty Name="id_paytype" ColumnName="id paytype" />
+          <ScalarProperty Name="status" ColumnName="status" />
+          <ScalarProperty Name="number" ColumnName="number" />
+          <ScalarProperty Name="description" ColumnName="description" />
+          <ScalarProperty Name="tariff" ColumnName="tariff" />
+          <ScalarProperty Name="time" ColumnName="time" />
+          <ScalarProperty Name="driver" ColumnName="driver" />
+          <ScalarProperty Name="price" ColumnName="price" />
+          <ScalarProperty Name="customer_phone" ColumnName="customer phone" />
+          <ScalarProperty Name="customer_name" ColumnName="customer name" />
+          <ScalarProperty Name="end_point" ColumnName="end point" />
+          <ScalarProperty Name="starting_point" ColumnName="starting point" />
+          <ScalarProperty Name="id" ColumnName="id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Order_status">
+      <EntityTypeMapping TypeName="TaxiSupportModel.Order_status">
+        <MappingFragment StoreEntitySet="Order status">
+          <ScalarProperty Name="description" ColumnName="description" />
+          <ScalarProperty Name="id" ColumnName="id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="PayType">
+      <EntityTypeMapping TypeName="TaxiSupportModel.PayType">
+        <MappingFragment StoreEntitySet="PayType">
+          <ScalarProperty Name="description" ColumnName="description" />
+          <ScalarProperty Name="id" ColumnName="id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Post">
+      <EntityTypeMapping TypeName="TaxiSupportModel.Post">
+        <MappingFragment StoreEntitySet="Post">
+          <ScalarProperty Name="description" ColumnName="description" />
+          <ScalarProperty Name="id" ColumnName="id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Response_to_the_appeal">
+      <EntityTypeMapping TypeName="TaxiSupportModel.Response_to_the_appeal">
+        <MappingFragment StoreEntitySet="Response to the appeal">
+          <ScalarProperty Name="id_judgment" ColumnName="id judgment" />
+          <ScalarProperty Name="date" ColumnName="date" />
+          <ScalarProperty Name="id_appeal" ColumnName="id appeal" />
+          <ScalarProperty Name="responce" ColumnName="responce" />
+          <ScalarProperty Name="id_user" ColumnName="id user" />
+          <ScalarProperty Name="id" ColumnName="id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Status_of_the_driver_s_account">
+      <EntityTypeMapping TypeName="TaxiSupportModel.Status_of_the_driver_s_account">
+        <MappingFragment StoreEntitySet="Status of the driver's account">
+          <ScalarProperty Name="description" ColumnName="description" />
+          <ScalarProperty Name="id" ColumnName="id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Statuses">
+      <EntityTypeMapping TypeName="TaxiSupportModel.Statuses">
+        <MappingFragment StoreEntitySet="Statuses">
+          <ScalarProperty Name="description" ColumnName="description" />
+          <ScalarProperty Name="id" ColumnName="id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Tariff">
+      <EntityTypeMapping TypeName="TaxiSupportModel.Tariff">
+        <MappingFragment StoreEntitySet="Tariff">
+          <ScalarProperty Name="image" ColumnName="image" />
+          <ScalarProperty Name="price" ColumnName="price" />
+          <ScalarProperty Name="description" ColumnName="description" />
+          <ScalarProperty Name="id" ColumnName="id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Tariff_zone">
+      <EntityTypeMapping TypeName="TaxiSupportModel.Tariff_zone">
+        <MappingFragment StoreEntitySet="Tariff zone">
+          <ScalarProperty Name="minPrice" ColumnName="minPrice" />
+          <ScalarProperty Name="description" ColumnName="description" />
+          <ScalarProperty Name="id" ColumnName="id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Type_problem">
+      <EntityTypeMapping TypeName="TaxiSupportModel.Type_problem">
+        <MappingFragment StoreEntitySet="Type problem">
+          <ScalarProperty Name="description" ColumnName="description" />
+          <ScalarProperty Name="id" ColumnName="id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Type_Sender">
+      <EntityTypeMapping TypeName="TaxiSupportModel.Type_Sender">
+        <MappingFragment StoreEntitySet="Type Sender">
+          <ScalarProperty Name="description" ColumnName="description" />
+          <ScalarProperty Name="id" ColumnName="id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="User">
+      <EntityTypeMapping TypeName="TaxiSupportModel.User">
+        <MappingFragment StoreEntitySet="User">
+          <ScalarProperty Name="profile_name" ColumnName="profile name" />
+          <ScalarProperty Name="post" ColumnName="post" />
+          <ScalarProperty Name="password" ColumnName="password" />
+          <ScalarProperty Name="login" ColumnName="login" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <AssociationSetMapping Name="Description_of_the_appeals" TypeName="TaxiSupportModel.Description_of_the_appeals" StoreEntitySet="Description of the appeals">
+      <EndProperty Name="Description_appeal">
+        <ScalarProperty Name="id" ColumnName="id description" />
+      </EndProperty>
+      <EndProperty Name="Appeal">
+        <ScalarProperty Name="ID" ColumnName="id appeal" />
+      </EndProperty>
+    </AssociationSetMapping>
+    <AssociationSetMapping Name="Driver_s_tariffs" TypeName="TaxiSupportModel.Driver_s_tariffs" StoreEntitySet="Driver's tariffs">
+      <EndProperty Name="Tariff">
+        <ScalarProperty Name="id" ColumnName="id tariff" />
+      </EndProperty>
+      <EndProperty Name="Driver">
+        <ScalarProperty Name="id" ColumnName="id driver" />
+      </EndProperty>
+    </AssociationSetMapping>
+    <AssociationSetMapping Name="Order_Options" TypeName="TaxiSupportModel.Order_Options" StoreEntitySet="Order Options">
+      <EndProperty Name="Order">
+        <ScalarProperty Name="id" ColumnName="id order" />
+      </EndProperty>
+      <EndProperty Name="Options">
+        <ScalarProperty Name="id" ColumnName="id option" />
+      </EndProperty>
+    </AssociationSetMapping>
+    <EntitySetMapping Name="Blocking_the_driver">
+      <EntityTypeMapping TypeName="TaxiSupportModel.Blocking_the_driver">
+        <MappingFragment StoreEntitySet="Blocking the driver">
+          <ScalarProperty Name="time" ColumnName="time" />
+          <ScalarProperty Name="id_user" ColumnName="id user" />
+          <ScalarProperty Name="id_driver" ColumnName="id driver" />
+          <ScalarProperty Name="id" ColumnName="id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

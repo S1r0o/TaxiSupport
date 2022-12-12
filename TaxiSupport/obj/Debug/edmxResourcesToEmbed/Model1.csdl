@@ -1,0 +1,645 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="TaxiSupportModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityContainer Name="Entities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="Appeal" EntityType="TaxiSupportModel.Appeal" />
+    <EntitySet Name="Applicant" EntityType="TaxiSupportModel.Applicant" />
+    <EntitySet Name="Description_appeal" EntityType="TaxiSupportModel.Description_appeal" />
+    <EntitySet Name="Driver" EntityType="TaxiSupportModel.Driver" />
+    <EntitySet Name="FAQ" EntityType="TaxiSupportModel.FAQ" />
+    <EntitySet Name="Importance" EntityType="TaxiSupportModel.Importance" />
+    <EntitySet Name="Judgment" EntityType="TaxiSupportModel.Judgment" />
+    <EntitySet Name="Message" EntityType="TaxiSupportModel.Message" />
+    <EntitySet Name="Options" EntityType="TaxiSupportModel.Options" />
+    <EntitySet Name="Order" EntityType="TaxiSupportModel.Order" />
+    <EntitySet Name="Order_status" EntityType="TaxiSupportModel.Order_status" />
+    <EntitySet Name="PayType" EntityType="TaxiSupportModel.PayType" />
+    <EntitySet Name="Post" EntityType="TaxiSupportModel.Post" />
+    <EntitySet Name="Response_to_the_appeal" EntityType="TaxiSupportModel.Response_to_the_appeal" />
+    <EntitySet Name="Status_of_the_driver_s_account" EntityType="TaxiSupportModel.Status_of_the_driver_s_account" />
+    <EntitySet Name="Statuses" EntityType="TaxiSupportModel.Statuses" />
+    <EntitySet Name="Tariff" EntityType="TaxiSupportModel.Tariff" />
+    <EntitySet Name="Tariff_zone" EntityType="TaxiSupportModel.Tariff_zone" />
+    <EntitySet Name="Type_problem" EntityType="TaxiSupportModel.Type_problem" />
+    <EntitySet Name="Type_Sender" EntityType="TaxiSupportModel.Type_Sender" />
+    <EntitySet Name="User" EntityType="TaxiSupportModel.User" />
+    <AssociationSet Name="FK_Appeal_Applicant" Association="TaxiSupportModel.FK_Appeal_Applicant">
+      <End Role="Applicant" EntitySet="Applicant" />
+      <End Role="Appeal" EntitySet="Appeal" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Appeal_Importance" Association="TaxiSupportModel.FK_Appeal_Importance">
+      <End Role="Importance" EntitySet="Importance" />
+      <End Role="Appeal" EntitySet="Appeal" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Appeal_Order" Association="TaxiSupportModel.FK_Appeal_Order">
+      <End Role="Order" EntitySet="Order" />
+      <End Role="Appeal" EntitySet="Appeal" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Appeal_Statuses" Association="TaxiSupportModel.FK_Appeal_Statuses">
+      <End Role="Statuses" EntitySet="Statuses" />
+      <End Role="Appeal" EntitySet="Appeal" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Appeal_Type_problem" Association="TaxiSupportModel.FK_Appeal_Type_problem">
+      <End Role="Type_problem" EntitySet="Type_problem" />
+      <End Role="Appeal" EntitySet="Appeal" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Appeal_User" Association="TaxiSupportModel.FK_Appeal_User">
+      <End Role="User" EntitySet="User" />
+      <End Role="Appeal" EntitySet="Appeal" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Response_to_the_appeal_Appeal" Association="TaxiSupportModel.FK_Response_to_the_appeal_Appeal">
+      <End Role="Appeal" EntitySet="Appeal" />
+      <End Role="Response_to_the_appeal" EntitySet="Response_to_the_appeal" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Description_appeal_User" Association="TaxiSupportModel.FK_Description_appeal_User">
+      <End Role="User" EntitySet="User" />
+      <End Role="Description_appeal" EntitySet="Description_appeal" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Driver_Status_of_the_driver_s_account" Association="TaxiSupportModel.FK_Driver_Status_of_the_driver_s_account">
+      <End Role="Status_of_the_driver_s_account" EntitySet="Status_of_the_driver_s_account" />
+      <End Role="Driver" EntitySet="Driver" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Order_Driver" Association="TaxiSupportModel.FK_Order_Driver">
+      <End Role="Driver" EntitySet="Driver" />
+      <End Role="Order" EntitySet="Order" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Response_to_the_appeal_Judgment" Association="TaxiSupportModel.FK_Response_to_the_appeal_Judgment">
+      <End Role="Judgment" EntitySet="Judgment" />
+      <End Role="Response_to_the_appeal" EntitySet="Response_to_the_appeal" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Messeng_Order" Association="TaxiSupportModel.FK_Messeng_Order">
+      <End Role="Order" EntitySet="Order" />
+      <End Role="Message" EntitySet="Message" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Messeng_Type_Sender" Association="TaxiSupportModel.FK_Messeng_Type_Sender">
+      <End Role="Type_Sender" EntitySet="Type_Sender" />
+      <End Role="Message" EntitySet="Message" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Order_Order_status" Association="TaxiSupportModel.FK_Order_Order_status">
+      <End Role="Order_status" EntitySet="Order_status" />
+      <End Role="Order" EntitySet="Order" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Order_PayType" Association="TaxiSupportModel.FK_Order_PayType">
+      <End Role="PayType" EntitySet="PayType" />
+      <End Role="Order" EntitySet="Order" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Order_Tariff" Association="TaxiSupportModel.FK_Order_Tariff">
+      <End Role="Tariff" EntitySet="Tariff" />
+      <End Role="Order" EntitySet="Order" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Order_Tariff_zone" Association="TaxiSupportModel.FK_Order_Tariff_zone">
+      <End Role="Tariff_zone" EntitySet="Tariff_zone" />
+      <End Role="Order" EntitySet="Order" />
+    </AssociationSet>
+    <AssociationSet Name="FK_User_Post" Association="TaxiSupportModel.FK_User_Post">
+      <End Role="Post" EntitySet="Post" />
+      <End Role="User" EntitySet="User" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Response_to_the_appeal_User" Association="TaxiSupportModel.FK_Response_to_the_appeal_User">
+      <End Role="User" EntitySet="User" />
+      <End Role="Response_to_the_appeal" EntitySet="Response_to_the_appeal" />
+    </AssociationSet>
+    <AssociationSet Name="Description_of_the_appeals" Association="TaxiSupportModel.Description_of_the_appeals">
+      <End Role="Appeal" EntitySet="Appeal" />
+      <End Role="Description_appeal" EntitySet="Description_appeal" />
+    </AssociationSet>
+    <AssociationSet Name="Driver_s_tariffs" Association="TaxiSupportModel.Driver_s_tariffs">
+      <End Role="Driver" EntitySet="Driver" />
+      <End Role="Tariff" EntitySet="Tariff" />
+    </AssociationSet>
+    <AssociationSet Name="Order_Options" Association="TaxiSupportModel.Order_Options">
+      <End Role="Options" EntitySet="Options" />
+      <End Role="Order" EntitySet="Order" />
+    </AssociationSet>
+    <EntitySet Name="Blocking_the_driver" EntityType="TaxiSupportModel.Blocking_the_driver" />
+    <AssociationSet Name="FK_Blocking_the_driver_Driver" Association="TaxiSupportModel.FK_Blocking_the_driver_Driver">
+      <End Role="Driver" EntitySet="Driver" />
+      <End Role="Blocking_the_driver" EntitySet="Blocking_the_driver" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Blocking_the_driver_User" Association="TaxiSupportModel.FK_Blocking_the_driver_User">
+      <End Role="User" EntitySet="User" />
+      <End Role="Blocking_the_driver" EntitySet="Blocking_the_driver" />
+    </AssociationSet>
+  </EntityContainer>
+  <EntityType Name="Appeal">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="status" Type="Int32" Nullable="false" />
+    <Property Name="applicant" Type="Int32" Nullable="false" />
+    <Property Name="problem_type" Type="Int32" Nullable="false" />
+    <Property Name="date" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="order" Type="Int32" Nullable="false" />
+    <Property Name="importance" Type="Int32" Nullable="false" />
+    <Property Name="description" Type="String" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="id_user" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="Applicant1" Relationship="TaxiSupportModel.FK_Appeal_Applicant" FromRole="Appeal" ToRole="Applicant" />
+    <NavigationProperty Name="Importance1" Relationship="TaxiSupportModel.FK_Appeal_Importance" FromRole="Appeal" ToRole="Importance" />
+    <NavigationProperty Name="Order1" Relationship="TaxiSupportModel.FK_Appeal_Order" FromRole="Appeal" ToRole="Order" />
+    <NavigationProperty Name="Statuses" Relationship="TaxiSupportModel.FK_Appeal_Statuses" FromRole="Appeal" ToRole="Statuses" />
+    <NavigationProperty Name="Type_problem" Relationship="TaxiSupportModel.FK_Appeal_Type_problem" FromRole="Appeal" ToRole="Type_problem" />
+    <NavigationProperty Name="User" Relationship="TaxiSupportModel.FK_Appeal_User" FromRole="Appeal" ToRole="User" />
+    <NavigationProperty Name="Response_to_the_appeal" Relationship="TaxiSupportModel.FK_Response_to_the_appeal_Appeal" FromRole="Appeal" ToRole="Response_to_the_appeal" />
+    <NavigationProperty Name="Description_appeal" Relationship="TaxiSupportModel.Description_of_the_appeals" FromRole="Appeal" ToRole="Description_appeal" />
+  </EntityType>
+  <EntityType Name="Applicant">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="name" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="phone" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="email" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="Appeal" Relationship="TaxiSupportModel.FK_Appeal_Applicant" FromRole="Applicant" ToRole="Appeal" />
+  </EntityType>
+  <EntityType Name="Description_appeal">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="description" Type="String" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="date" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="user" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="User1" Relationship="TaxiSupportModel.FK_Description_appeal_User" FromRole="Description_appeal" ToRole="User" />
+    <NavigationProperty Name="Appeal" Relationship="TaxiSupportModel.Description_of_the_appeals" FromRole="Description_appeal" ToRole="Appeal" />
+  </EntityType>
+  <EntityType Name="Driver">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="name" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="surname" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="patronymic" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="age" Type="Int32" Nullable="false" />
+    <Property Name="car_brand_and_model" Type="String" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="rating" Type="Int32" Nullable="false" />
+    <Property Name="car_number" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="id_status_account" Type="Int32" Nullable="false" />
+    <Property Name="employee_s_comment" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="phone" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="image" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="loyalty" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="Status_of_the_driver_s_account" Relationship="TaxiSupportModel.FK_Driver_Status_of_the_driver_s_account" FromRole="Driver" ToRole="Status_of_the_driver_s_account" />
+    <NavigationProperty Name="Order" Relationship="TaxiSupportModel.FK_Order_Driver" FromRole="Driver" ToRole="Order" />
+    <NavigationProperty Name="Tariff" Relationship="TaxiSupportModel.Driver_s_tariffs" FromRole="Driver" ToRole="Tariff" />
+    <NavigationProperty Name="Blocking_the_driver" Relationship="TaxiSupportModel.FK_Blocking_the_driver_Driver" FromRole="Driver" ToRole="Blocking_the_driver" />
+  </EntityType>
+  <EntityType Name="FAQ">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="title" Type="String" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="description" Type="String" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="date" Type="DateTime" Nullable="false" Precision="0" />
+  </EntityType>
+  <EntityType Name="Importance">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="description" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="Appeal" Relationship="TaxiSupportModel.FK_Appeal_Importance" FromRole="Importance" ToRole="Appeal" />
+  </EntityType>
+  <EntityType Name="Judgment">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="description" Type="String" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="Response_to_the_appeal" Relationship="TaxiSupportModel.FK_Response_to_the_appeal_Judgment" FromRole="Judgment" ToRole="Response_to_the_appeal" />
+  </EntityType>
+  <EntityType Name="Message">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="description" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="id_type_sender" Type="Int32" Nullable="false" />
+    <Property Name="time" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="id_order" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="Order" Relationship="TaxiSupportModel.FK_Messeng_Order" FromRole="Message" ToRole="Order" />
+    <NavigationProperty Name="Type_Sender" Relationship="TaxiSupportModel.FK_Messeng_Type_Sender" FromRole="Message" ToRole="Type_Sender" />
+  </EntityType>
+  <EntityType Name="Options">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="description" Type="String" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="price" Type="Decimal" Nullable="false" Precision="18" Scale="0" />
+    <NavigationProperty Name="Order" Relationship="TaxiSupportModel.Order_Options" FromRole="Options" ToRole="Order" />
+  </EntityType>
+  <EntityType Name="Order">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="starting_point" Type="String" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="end_point" Type="String" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="customer_name" Type="String" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="customer_phone" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="price" Type="Decimal" Nullable="false" Precision="18" Scale="2" />
+    <Property Name="driver" Type="Int32" Nullable="false" />
+    <Property Name="time" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="tariff" Type="Int32" Nullable="false" />
+    <Property Name="description" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="number" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="status" Type="Int32" Nullable="false" />
+    <Property Name="id_paytype" Type="Int32" Nullable="false" />
+    <Property Name="driver_point" Type="String" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="mileage" Type="Decimal" Nullable="false" Precision="18" Scale="4" />
+    <Property Name="tariff_zone" Type="Int32" Nullable="false" />
+    <Property Name="loyalty_for_the_order" Type="Int32" Nullable="false" />
+    <Property Name="travel_time" Type="String" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="Appeal" Relationship="TaxiSupportModel.FK_Appeal_Order" FromRole="Order" ToRole="Appeal" />
+    <NavigationProperty Name="Driver1" Relationship="TaxiSupportModel.FK_Order_Driver" FromRole="Order" ToRole="Driver" />
+    <NavigationProperty Name="Message" Relationship="TaxiSupportModel.FK_Messeng_Order" FromRole="Order" ToRole="Message" />
+    <NavigationProperty Name="Order_status" Relationship="TaxiSupportModel.FK_Order_Order_status" FromRole="Order" ToRole="Order_status" />
+    <NavigationProperty Name="PayType" Relationship="TaxiSupportModel.FK_Order_PayType" FromRole="Order" ToRole="PayType" />
+    <NavigationProperty Name="Tariff1" Relationship="TaxiSupportModel.FK_Order_Tariff" FromRole="Order" ToRole="Tariff" />
+    <NavigationProperty Name="Tariff_zone1" Relationship="TaxiSupportModel.FK_Order_Tariff_zone" FromRole="Order" ToRole="Tariff_zone" />
+    <NavigationProperty Name="Options" Relationship="TaxiSupportModel.Order_Options" FromRole="Order" ToRole="Options" />
+  </EntityType>
+  <EntityType Name="Order_status">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="description" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="Order" Relationship="TaxiSupportModel.FK_Order_Order_status" FromRole="Order_status" ToRole="Order" />
+  </EntityType>
+  <EntityType Name="PayType">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="description" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="Order" Relationship="TaxiSupportModel.FK_Order_PayType" FromRole="PayType" ToRole="Order" />
+  </EntityType>
+  <EntityType Name="Post">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="description" Type="String" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="User" Relationship="TaxiSupportModel.FK_User_Post" FromRole="Post" ToRole="User" />
+  </EntityType>
+  <EntityType Name="Response_to_the_appeal">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="id_user" Type="Int32" Nullable="false" />
+    <Property Name="responce" Type="String" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="id_appeal" Type="Int32" Nullable="false" />
+    <Property Name="date" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="id_judgment" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="Appeal" Relationship="TaxiSupportModel.FK_Response_to_the_appeal_Appeal" FromRole="Response_to_the_appeal" ToRole="Appeal" />
+    <NavigationProperty Name="Judgment" Relationship="TaxiSupportModel.FK_Response_to_the_appeal_Judgment" FromRole="Response_to_the_appeal" ToRole="Judgment" />
+    <NavigationProperty Name="User" Relationship="TaxiSupportModel.FK_Response_to_the_appeal_User" FromRole="Response_to_the_appeal" ToRole="User" />
+  </EntityType>
+  <EntityType Name="Status_of_the_driver_s_account">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="description" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="Driver" Relationship="TaxiSupportModel.FK_Driver_Status_of_the_driver_s_account" FromRole="Status_of_the_driver_s_account" ToRole="Driver" />
+  </EntityType>
+  <EntityType Name="Statuses">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="description" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="Appeal" Relationship="TaxiSupportModel.FK_Appeal_Statuses" FromRole="Statuses" ToRole="Appeal" />
+  </EntityType>
+  <EntityType Name="Tariff">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="description" Type="String" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="price" Type="Decimal" Nullable="false" Precision="18" Scale="0" />
+    <Property Name="image" Type="String" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="Order" Relationship="TaxiSupportModel.FK_Order_Tariff" FromRole="Tariff" ToRole="Order" />
+    <NavigationProperty Name="Driver" Relationship="TaxiSupportModel.Driver_s_tariffs" FromRole="Tariff" ToRole="Driver" />
+  </EntityType>
+  <EntityType Name="Tariff_zone">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="description" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="minPrice" Type="Decimal" Nullable="false" Precision="18" Scale="0" />
+    <NavigationProperty Name="Order" Relationship="TaxiSupportModel.FK_Order_Tariff_zone" FromRole="Tariff_zone" ToRole="Order" />
+  </EntityType>
+  <EntityType Name="Type_problem">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="description" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="Appeal" Relationship="TaxiSupportModel.FK_Appeal_Type_problem" FromRole="Type_problem" ToRole="Appeal" />
+  </EntityType>
+  <EntityType Name="Type_Sender">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="description" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="Message" Relationship="TaxiSupportModel.FK_Messeng_Type_Sender" FromRole="Type_Sender" ToRole="Message" />
+  </EntityType>
+  <EntityType Name="User">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="login" Type="String" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="password" Type="String" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="post" Type="Int32" Nullable="false" />
+    <Property Name="profile_name" Type="String" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="Appeal" Relationship="TaxiSupportModel.FK_Appeal_User" FromRole="User" ToRole="Appeal" />
+    <NavigationProperty Name="Description_appeal" Relationship="TaxiSupportModel.FK_Description_appeal_User" FromRole="User" ToRole="Description_appeal" />
+    <NavigationProperty Name="Post1" Relationship="TaxiSupportModel.FK_User_Post" FromRole="User" ToRole="Post" />
+    <NavigationProperty Name="Response_to_the_appeal" Relationship="TaxiSupportModel.FK_Response_to_the_appeal_User" FromRole="User" ToRole="Response_to_the_appeal" />
+    <NavigationProperty Name="Blocking_the_driver" Relationship="TaxiSupportModel.FK_Blocking_the_driver_User" FromRole="User" ToRole="Blocking_the_driver" />
+  </EntityType>
+  <Association Name="FK_Appeal_Applicant">
+    <End Type="TaxiSupportModel.Applicant" Role="Applicant" Multiplicity="1" />
+    <End Type="TaxiSupportModel.Appeal" Role="Appeal" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Applicant">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="Appeal">
+        <PropertyRef Name="applicant" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Appeal_Importance">
+    <End Type="TaxiSupportModel.Importance" Role="Importance" Multiplicity="1" />
+    <End Type="TaxiSupportModel.Appeal" Role="Appeal" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Importance">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="Appeal">
+        <PropertyRef Name="importance" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Appeal_Order">
+    <End Type="TaxiSupportModel.Order" Role="Order" Multiplicity="1" />
+    <End Type="TaxiSupportModel.Appeal" Role="Appeal" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Order">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="Appeal">
+        <PropertyRef Name="order" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Appeal_Statuses">
+    <End Type="TaxiSupportModel.Statuses" Role="Statuses" Multiplicity="1" />
+    <End Type="TaxiSupportModel.Appeal" Role="Appeal" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Statuses">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="Appeal">
+        <PropertyRef Name="status" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Appeal_Type_problem">
+    <End Type="TaxiSupportModel.Type_problem" Role="Type_problem" Multiplicity="1" />
+    <End Type="TaxiSupportModel.Appeal" Role="Appeal" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Type_problem">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="Appeal">
+        <PropertyRef Name="problem_type" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Appeal_User">
+    <End Type="TaxiSupportModel.User" Role="User" Multiplicity="1" />
+    <End Type="TaxiSupportModel.Appeal" Role="Appeal" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="User">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="Appeal">
+        <PropertyRef Name="id_user" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Response_to_the_appeal_Appeal">
+    <End Type="TaxiSupportModel.Appeal" Role="Appeal" Multiplicity="1" />
+    <End Type="TaxiSupportModel.Response_to_the_appeal" Role="Response_to_the_appeal" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Appeal">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="Response_to_the_appeal">
+        <PropertyRef Name="id_appeal" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Description_appeal_User">
+    <End Type="TaxiSupportModel.User" Role="User" Multiplicity="1" />
+    <End Type="TaxiSupportModel.Description_appeal" Role="Description_appeal" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="User">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="Description_appeal">
+        <PropertyRef Name="user" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Driver_Status_of_the_driver_s_account">
+    <End Type="TaxiSupportModel.Status_of_the_driver_s_account" Role="Status_of_the_driver_s_account" Multiplicity="1" />
+    <End Type="TaxiSupportModel.Driver" Role="Driver" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Status_of_the_driver_s_account">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="Driver">
+        <PropertyRef Name="id_status_account" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Order_Driver">
+    <End Type="TaxiSupportModel.Driver" Role="Driver" Multiplicity="1" />
+    <End Type="TaxiSupportModel.Order" Role="Order" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Driver">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="Order">
+        <PropertyRef Name="driver" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Response_to_the_appeal_Judgment">
+    <End Type="TaxiSupportModel.Judgment" Role="Judgment" Multiplicity="1" />
+    <End Type="TaxiSupportModel.Response_to_the_appeal" Role="Response_to_the_appeal" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Judgment">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="Response_to_the_appeal">
+        <PropertyRef Name="id_judgment" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Messeng_Order">
+    <End Type="TaxiSupportModel.Order" Role="Order" Multiplicity="1" />
+    <End Type="TaxiSupportModel.Message" Role="Message" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Order">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="Message">
+        <PropertyRef Name="id_order" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Messeng_Type_Sender">
+    <End Type="TaxiSupportModel.Type_Sender" Role="Type_Sender" Multiplicity="1" />
+    <End Type="TaxiSupportModel.Message" Role="Message" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Type_Sender">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="Message">
+        <PropertyRef Name="id_type_sender" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Order_Order_status">
+    <End Type="TaxiSupportModel.Order_status" Role="Order_status" Multiplicity="1" />
+    <End Type="TaxiSupportModel.Order" Role="Order" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Order_status">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="Order">
+        <PropertyRef Name="status" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Order_PayType">
+    <End Type="TaxiSupportModel.PayType" Role="PayType" Multiplicity="1" />
+    <End Type="TaxiSupportModel.Order" Role="Order" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="PayType">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="Order">
+        <PropertyRef Name="id_paytype" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Order_Tariff">
+    <End Type="TaxiSupportModel.Tariff" Role="Tariff" Multiplicity="1" />
+    <End Type="TaxiSupportModel.Order" Role="Order" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Tariff">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="Order">
+        <PropertyRef Name="tariff" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Order_Tariff_zone">
+    <End Type="TaxiSupportModel.Tariff_zone" Role="Tariff_zone" Multiplicity="1" />
+    <End Type="TaxiSupportModel.Order" Role="Order" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Tariff_zone">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="Order">
+        <PropertyRef Name="tariff_zone" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_User_Post">
+    <End Type="TaxiSupportModel.Post" Role="Post" Multiplicity="1" />
+    <End Type="TaxiSupportModel.User" Role="User" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Post">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="User">
+        <PropertyRef Name="post" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Response_to_the_appeal_User">
+    <End Type="TaxiSupportModel.User" Role="User" Multiplicity="1" />
+    <End Type="TaxiSupportModel.Response_to_the_appeal" Role="Response_to_the_appeal" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="User">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="Response_to_the_appeal">
+        <PropertyRef Name="id_user" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="Description_of_the_appeals">
+    <End Type="TaxiSupportModel.Appeal" Role="Appeal" Multiplicity="*" />
+    <End Type="TaxiSupportModel.Description_appeal" Role="Description_appeal" Multiplicity="*" />
+  </Association>
+  <Association Name="Driver_s_tariffs">
+    <End Type="TaxiSupportModel.Driver" Role="Driver" Multiplicity="*" />
+    <End Type="TaxiSupportModel.Tariff" Role="Tariff" Multiplicity="*" />
+  </Association>
+  <Association Name="Order_Options">
+    <End Type="TaxiSupportModel.Options" Role="Options" Multiplicity="*" />
+    <End Type="TaxiSupportModel.Order" Role="Order" Multiplicity="*" />
+  </Association>
+  <EntityType Name="Blocking_the_driver">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" />
+    <Property Name="id_driver" Type="Int32" Nullable="false" />
+    <Property Name="id_user" Type="Int32" Nullable="false" />
+    <Property Name="time" Type="DateTime" Nullable="false" Precision="3" />
+    <NavigationProperty Name="Driver" Relationship="TaxiSupportModel.FK_Blocking_the_driver_Driver" FromRole="Blocking_the_driver" ToRole="Driver" />
+    <NavigationProperty Name="User" Relationship="TaxiSupportModel.FK_Blocking_the_driver_User" FromRole="Blocking_the_driver" ToRole="User" />
+  </EntityType>
+  <Association Name="FK_Blocking_the_driver_Driver">
+    <End Type="TaxiSupportModel.Driver" Role="Driver" Multiplicity="1" />
+    <End Type="TaxiSupportModel.Blocking_the_driver" Role="Blocking_the_driver" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Driver">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="Blocking_the_driver">
+        <PropertyRef Name="id_driver" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Blocking_the_driver_User">
+    <End Type="TaxiSupportModel.User" Role="User" Multiplicity="1" />
+    <End Type="TaxiSupportModel.Blocking_the_driver" Role="Blocking_the_driver" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="User">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="Blocking_the_driver">
+        <PropertyRef Name="id_user" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+</Schema>

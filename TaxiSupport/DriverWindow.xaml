@@ -1,0 +1,36 @@
+﻿<Window x:Class="TaxiSupport.DriverWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:TaxiSupport"
+        mc:Ignorable="d"
+        Title="Карточка водителя" Height="525" Width="626" MaxHeight="525" MaxWidth="626" MinHeight="525" MinWidth="626" Closing="Window_Closing">
+    <Window.Resources>
+        <local:ImageDriverConverter x:Key="imageDriver"></local:ImageDriverConverter>
+    </Window.Resources>
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="56*"/>
+            <ColumnDefinition Width="257*"/>
+        </Grid.ColumnDefinitions>
+        <Image x:Name="image" HorizontalAlignment="Left" Stretch="Fill" Source="{Binding image, Converter={StaticResource imageDriver}}" Height="216" Margin="16,72,0,0" VerticalAlignment="Top" Width="226" Grid.ColumnSpan="2"/>
+        <Label x:Name="textBox"  HorizontalAlignment="Left" Margin="16,10,0,0" Content="Карточка водителя" FontFamily="Comic Sans MS" VerticalContentAlignment="Center"  FontSize="36" HorizontalContentAlignment="Center" VerticalAlignment="Top"  Width="574" Height="57" Grid.ColumnSpan="2"/>
+        <TextBox x:Name="StartPositionLabel"  Text="{Binding employee_s_comment}" FontFamily="Comic Sans MS" HorizontalAlignment="Left" TextWrapping="Wrap"  Background="#FFE8D6B7" Margin="162,72,0,0" Height="93" VerticalAlignment="Top" Width="316" Grid.Column="1"/>
+        <TextBox x:Name="NameTextBox" VerticalContentAlignment="Center" FontFamily="Comic Sans MS"  HorizontalContentAlignment="Left" Text="{Binding name}" HorizontalAlignment="Left" IsReadOnly="True"  Background="#FFE8D6B7" Margin="162,170,0,0" Height="35" VerticalAlignment="Top" Width="158" Grid.Column="1"/>
+        <TextBox x:Name="CarTextBox" HorizontalContentAlignment="Left" VerticalContentAlignment="Center" FontFamily="Comic Sans MS" Text="{Binding car_brand_and_model}" HorizontalAlignment="Left" IsReadOnly="True" Background="#FFE8D6B7" Margin="162,287,0,0" Height="34" VerticalAlignment="Top" Width="158" Grid.Column="1"/>
+        <Button x:Name="SaveButton" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Content="Сохранить" HorizontalAlignment="Left" VerticalAlignment="Top" Width="180" Height="30" FontSize="18" FontFamily="Comic Sans MS" Background="#FFDDDDDD" Margin="298,424,0,0" Click="SaveButton_Click" Grid.Column="1"/>
+        <ComboBox x:Name="StatusComboBox" DisplayMemberPath="description" HorizontalContentAlignment="Center" FontFamily="Comic Sans MS" VerticalContentAlignment="Center" SelectedItem="{Binding Status_of_the_driver_s_account}" HorizontalAlignment="Left"  Background="#FFDDDDDD" Margin="40,295,0,0" VerticalAlignment="Top" Width="204" Height="26" Grid.ColumnSpan="2"/>
+        <ComboBox x:Name="StatusComboBox_Copy" DisplayMemberPath="description" ItemsSource="{Binding Tariff}" FontFamily="Comic Sans MS" IsReadOnly="True" HorizontalAlignment="Left"  Background="#FFDDDDDD" Margin="162,327,0,0" VerticalAlignment="Top" Width="316" Height="26" Grid.Column="1"/>
+        <TextBox x:Name="CarTextBox_Copy" HorizontalContentAlignment="Left" FontFamily="Comic Sans MS" VerticalContentAlignment="Center" Text="{Binding phone}" HorizontalAlignment="Left" IsReadOnly="True"  Background="#FFE8D6B7" Margin="162,248,0,0" Height="34" VerticalAlignment="Top" Width="316" Grid.Column="1"/>
+        <TextBox x:Name="CarTextBox_Copy1" Text="{Binding rating}" HorizontalAlignment="Left" HorizontalContentAlignment="Center" FontFamily="Comic Sans MS" VerticalContentAlignment="Center" IsReadOnly="True"  Background="#FFE8D6B7" Margin="30,334,0,0" Height="30" VerticalAlignment="Top" Width="51" Grid.Column="1"/>
+        <TextBox x:Name="NameTextBox_Copy" VerticalContentAlignment="Center" FontFamily="Comic Sans MS" HorizontalContentAlignment="Left" Text="{Binding surname}" HorizontalAlignment="Left" IsReadOnly="True"  Background="#FFE8D6B7" Margin="325,170,0,0" Height="35" VerticalAlignment="Top" Width="153" Grid.Column="1"/>
+        <TextBox x:Name="NameTextBox_Copy1" VerticalContentAlignment="Center" FontFamily="Comic Sans MS" HorizontalContentAlignment="Left" Text="{Binding patronymic}" HorizontalAlignment="Left" IsReadOnly="True"  Background="#FFE8D6B7" Margin="162,210,0,0" Height="33" VerticalAlignment="Top" Width="158" Grid.Column="1"/>
+        <TextBox x:Name="NameTextBox_Copy2" VerticalContentAlignment="Center" FontFamily="Comic Sans MS" HorizontalContentAlignment="Left" Text="{Binding age}" HorizontalAlignment="Left" IsReadOnly="True"  Background="#FFE8D6B7" Margin="325,210,0,0" Height="33" VerticalAlignment="Top" Width="153" Grid.Column="1"/>
+        <TextBox x:Name="CarTextBox_Copy2" HorizontalContentAlignment="Left" VerticalContentAlignment="Center" FontFamily="Comic Sans MS" Text="{Binding car_number}" HorizontalAlignment="Left" IsReadOnly="True"  Background="#FFE8D6B7" Margin="325,287,0,0" Height="34" VerticalAlignment="Top" Width="153" Grid.Column="1"/>
+        <Label x:Name="label" Content="Рейтинг:" HorizontalAlignment="Left" FontFamily="Comic Sans MS" Margin="50,331,0,0" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontSize="20" VerticalAlignment="Top" Width="92" Height="36" Grid.ColumnSpan="2"/>
+        <Button x:Name="OrderButton" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Content="Заказы"  HorizontalAlignment="Left" VerticalAlignment="Top" Width="180" Height="30" FontSize="18" FontFamily="Comic Sans MS" Background="#FFDDDDDD" Margin="40,424,0,0" Click="OrderButton_Click" Grid.ColumnSpan="2"/>
+        <TextBox x:Name="CarTextBox_Copy3" Text="{Binding loyalty}" HorizontalAlignment="Left" HorizontalContentAlignment="Center" FontFamily="Comic Sans MS" VerticalContentAlignment="Center"  Background="#FFE8D6B7" Margin="30,368,0,0" Height="30" VerticalAlignment="Top" Width="51" Grid.Column="1"/>
+        <Label x:Name="label_Copy" Content="Лояльность:" HorizontalAlignment="Left" Margin="15,366,0,0" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontFamily="Comic Sans MS" FontSize="20" VerticalAlignment="Top" Width="127" Height="34" Grid.ColumnSpan="2"/>
+    </Grid>
+</Window>

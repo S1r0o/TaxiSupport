@@ -1,0 +1,27 @@
+﻿<Window x:Class="TaxiSupport.CreateAppealWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:TaxiSupport"
+        mc:Ignorable="d"
+        Title="Создание обращения" Height="550" Width="800" MaxHeight="550" MaxWidth="800" MinHeight="550" MinWidth="800" Closing="Window_Closing">
+    <Grid>
+        <Label Content="Создание обращения" HorizontalAlignment="Center" VerticalAlignment="Top" Width="300" Height="54" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontFamily="Comic Sans MS" FontSize="26" Margin="0,11,0,0"/>
+        <Label Content="Заказ" HorizontalAlignment="Left" VerticalAlignment="Top" HorizontalContentAlignment="Left" VerticalContentAlignment="Center" FontFamily="Comic Sans MS" FontSize="24" Margin="20,70,0,0"/>
+        <TextBox x:Name="Order" Width="310" Height="30" HorizontalAlignment="Left"  Background="#FFDDDDDD" IsReadOnly="True" VerticalAlignment="Bottom" TextWrapping="Wrap" FontFamily="Comic Sans MS" FontSize="16" HorizontalContentAlignment="Left" VerticalContentAlignment="Center" Margin="20,0,0,370" MouseDoubleClick="Order_MouseDoubleClick"/>
+        <Label Content="Описание проблемы" HorizontalAlignment="Left" VerticalAlignment="Top" HorizontalContentAlignment="Left" VerticalContentAlignment="Center" FontFamily="Comic Sans MS" FontSize="24" Margin="20,267,0,0" Height="41"/>
+        <TextBox x:Name="DescriptionBox" Width="428" Height="86" HorizontalAlignment="Left" VerticalAlignment="Top" Background="#FFE8D6B7" TextWrapping="Wrap" FontFamily="Comic Sans MS" FontSize="16" HorizontalContentAlignment="Left" Margin="20,313,0,0"/>
+        <Label Content="Важность" HorizontalAlignment="Left" VerticalAlignment="Top" HorizontalContentAlignment="Left" VerticalContentAlignment="Center" FontFamily="Comic Sans MS" FontSize="24" Margin="464,70,0,0"/>
+        <Label Content="Тип проблемы" HorizontalAlignment="Left" VerticalAlignment="Top" HorizontalContentAlignment="Left" VerticalContentAlignment="Center" FontFamily="Comic Sans MS" FontSize="24" Margin="464,158,0,0"/>
+        <Label Content="Время" HorizontalAlignment="Left" VerticalAlignment="Top" HorizontalContentAlignment="Left" VerticalContentAlignment="Center" FontFamily="Comic Sans MS" FontSize="24" Margin="20,158,0,0"/>
+        <TextBox x:Name="TimeBox" Width="310" Height="30" HorizontalAlignment="Left" Background="#FFE8D6B7" IsReadOnly="True" VerticalAlignment="Bottom" TextWrapping="Wrap" FontFamily="Comic Sans MS" FontSize="16" HorizontalContentAlignment="Left" VerticalContentAlignment="Center" Margin="20,0,0,280"/>
+        <Label Content="Заявитель" HorizontalAlignment="Left" VerticalAlignment="Center" HorizontalContentAlignment="Left" VerticalContentAlignment="Center" FontFamily="Comic Sans MS" FontSize="24" Margin="464,0,0,-60" Height="36"/>
+        <TextBox x:Name="Applicant" HorizontalAlignment="Left" VerticalAlignment="Bottom" Width="310" Height="30"  Background="#FFE8D6B7" VerticalContentAlignment="Center" Text="Введите имя" FontFamily="Comic Sans MS" FontSize="16" Margin="464,0,0,168"/>
+        <Button x:Name="CloseAppealButton" Content="Создать обращение" HorizontalAlignment="Left" VerticalAlignment="Top" Width="200" Height="40" FontSize="18" FontFamily="Comic Sans MS" Background="#FFDDDDDD" Margin="574,422,0,0" Click="CloseAppealButton_Click"/>
+        <ComboBox x:Name="TypeProblemComboBox" HorizontalAlignment="Left" VerticalAlignment="Bottom" Width="310" Height="30"  Background="#FFDDDDDD"  DisplayMemberPath="description" FontFamily="Comic Sans MS" FontSize="16" Margin="464,0,0,280"/>
+        <TextBox x:Name="Applicant_Copy" HorizontalAlignment="Left" VerticalAlignment="Bottom" Width="310"  Background="#FFE8D6B7" VerticalContentAlignment="Center" Text="Введите телефон" FontFamily="Comic Sans MS" FontSize="16" Margin="464,0,0,113" Height="30"/>
+        <ComboBox x:Name="ImportanceComboBox" HorizontalAlignment="Left" VerticalAlignment="Bottom" Width="310" Height="30"  Background="#FFDDDDDD"  DisplayMemberPath="description" FontFamily="Comic Sans MS" FontSize="16" Margin="464,0,0,370"/>
+
+    </Grid>
+</Window>

@@ -1,0 +1,133 @@
+C:\Users\Siro\OneDrive\Рабочий стол\TaxiSupport\TaxiSupport\TaxiSupport\obj\Debug\TaxiSupport.csproj.AssemblyReference.cache
+C:\Users\Siro\OneDrive\Рабочий стол\TaxiSupport\TaxiSupport\TaxiSupport\obj\Debug\TaxiSupport.csproj.SuggestedBindingRedirects.cache
+C:\Users\Siro\OneDrive\Рабочий стол\TaxiSupport\TaxiSupport\TaxiSupport\obj\Debug\AppealViewWindow.g.cs
+C:\Users\Siro\OneDrive\Рабочий стол\TaxiSupport\TaxiSupport\TaxiSupport\obj\Debug\MainWindow.g.cs
+C:\Users\Siro\OneDrive\Рабочий стол\TaxiSupport\TaxiSupport\TaxiSupport\obj\Debug\ViewWindow.g.cs
+C:\Users\Siro\OneDrive\Рабочий стол\TaxiSupport\TaxiSupport\TaxiSupport\obj\Debug\App.g.cs
+C:\Users\Siro\OneDrive\Рабочий стол\TaxiSupport\TaxiSupport\TaxiSupport\obj\Debug\TaxiSupport_Content.g.cs
+C:\Users\Siro\OneDrive\Рабочий стол\TaxiSupport\TaxiSupport\TaxiSupport\obj\Debug\GeneratedInternalTypeHelper.g.cs
+C:\Users\Siro\OneDrive\Рабочий стол\TaxiSupport\TaxiSupport\TaxiSupport\obj\Debug\TaxiSupport_MarkupCompile.cache
+C:\Users\Siro\OneDrive\Рабочий стол\TaxiSupport\TaxiSupport\TaxiSupport\obj\Debug\TaxiSupport_MarkupCompile.lref
+C:\Users\Siro\OneDrive\Рабочий стол\TaxiSupport\TaxiSupport\TaxiSupport\bin\Debug\TaxiSupport.exe.config
+C:\Users\Siro\OneDrive\Рабочий стол\TaxiSupport\TaxiSupport\TaxiSupport\bin\Debug\TaxiSupport.exe
+C:\Users\Siro\OneDrive\Рабочий стол\TaxiSupport\TaxiSupport\TaxiSupport\bin\Debug\TaxiSupport.pdb
+C:\Users\Siro\OneDrive\Рабочий стол\TaxiSupport\TaxiSupport\TaxiSupport\bin\Debug\EntityFramework.dll
+C:\Users\Siro\OneDrive\Рабочий стол\TaxiSupport\TaxiSupport\TaxiSupport\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Siro\OneDrive\Рабочий стол\TaxiSupport\TaxiSupport\TaxiSupport\bin\Debug\EntityFramework.xml
+C:\Users\Siro\OneDrive\Рабочий стол\TaxiSupport\TaxiSupport\TaxiSupport\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Siro\OneDrive\Рабочий стол\TaxiSupport\TaxiSupport\TaxiSupport\bin\Debug\ru\EntityFramework.resources.dll
+C:\Users\Siro\OneDrive\Рабочий стол\TaxiSupport\TaxiSupport\TaxiSupport\obj\Debug\MainWindow.baml
+C:\Users\Siro\OneDrive\Рабочий стол\TaxiSupport\TaxiSupport\TaxiSupport\obj\Debug\ViewWindow.baml
+C:\Users\Siro\OneDrive\Рабочий стол\TaxiSupport\TaxiSupport\TaxiSupport\obj\Debug\AppealViewWindow.baml
+C:\Users\Siro\OneDrive\Рабочий стол\TaxiSupport\TaxiSupport\TaxiSupport\obj\Debug\TaxiSupport.g.resources
+C:\Users\Siro\OneDrive\Рабочий стол\TaxiSupport\TaxiSupport\TaxiSupport\obj\Debug\TaxiSupport.Properties.Resources.resources
+C:\Users\Siro\OneDrive\Рабочий стол\TaxiSupport\TaxiSupport\TaxiSupport\obj\Debug\TaxiSupport.csproj.GenerateResource.cache
+C:\Users\Siro\OneDrive\Рабочий стол\TaxiSupport\TaxiSupport\TaxiSupport\obj\Debug\TaxiSupport.csproj.CoreCompileInputs.cache
+C:\Users\Siro\OneDrive\Рабочий стол\TaxiSupport\TaxiSupport\TaxiSupport\obj\Debug\TaxiSupport.csproj.CopyComplete
+C:\Users\Siro\OneDrive\Рабочий стол\TaxiSupport\TaxiSupport\TaxiSupport\obj\Debug\TaxiSupport.exe
+C:\Users\Siro\OneDrive\Рабочий стол\TaxiSupport\TaxiSupport\TaxiSupport\obj\Debug\TaxiSupport.pdb
+C:\Users\Siro\OneDrive\Рабочий стол\TaxiSupport\TaxiSupport\TaxiSupport\obj\Debug\CloseAppealWindow.g.cs
+C:\Users\Siro\OneDrive\Рабочий стол\TaxiSupport\TaxiSupport\TaxiSupport\obj\Debug\OrderWindow.g.cs
+C:\Users\Siro\OneDrive\Рабочий стол\TaxiSupport\TaxiSupport\TaxiSupport\obj\Debug\CloseAppealWindow.baml
+C:\Users\Siro\OneDrive\Рабочий стол\TaxiSupport\TaxiSupport\TaxiSupport\obj\Debug\OrderWindow.baml
+C:\Users\Siro\OneDrive\Рабочий стол\TaxiSupport\TaxiSupport\TaxiSupport\obj\Debug\ReportWindow.g.cs
+C:\Users\Siro\OneDrive\Рабочий стол\TaxiSupport\TaxiSupport\TaxiSupport\obj\Debug\ReportWindow.baml
+C:\Users\Siro\OneDrive\Рабочий стол\TaxiSupport\TaxiSupport\bin\Debug\TaxiSupport.exe.config
+C:\Users\Siro\OneDrive\Рабочий стол\TaxiSupport\TaxiSupport\bin\Debug\TaxiSupport.exe
+C:\Users\Siro\OneDrive\Рабочий стол\TaxiSupport\TaxiSupport\bin\Debug\TaxiSupport.pdb
+C:\Users\Siro\OneDrive\Рабочий стол\TaxiSupport\TaxiSupport\bin\Debug\EntityFramework.dll
+C:\Users\Siro\OneDrive\Рабочий стол\TaxiSupport\TaxiSupport\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Siro\OneDrive\Рабочий стол\TaxiSupport\TaxiSupport\bin\Debug\EntityFramework.xml
+C:\Users\Siro\OneDrive\Рабочий стол\TaxiSupport\TaxiSupport\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Siro\OneDrive\Рабочий стол\TaxiSupport\TaxiSupport\bin\Debug\ru\EntityFramework.resources.dll
+C:\Users\Siro\OneDrive\Рабочий стол\TaxiSupport\TaxiSupport\obj\Debug\TaxiSupport.csproj.AssemblyReference.cache
+C:\Users\Siro\OneDrive\Рабочий стол\TaxiSupport\TaxiSupport\obj\Debug\TaxiSupport.csproj.SuggestedBindingRedirects.cache
+C:\Users\Siro\OneDrive\Рабочий стол\TaxiSupport\TaxiSupport\obj\Debug\AppealViewWindow.g.cs
+C:\Users\Siro\OneDrive\Рабочий стол\TaxiSupport\TaxiSupport\obj\Debug\CloseAppealWindow.g.cs
+C:\Users\Siro\OneDrive\Рабочий стол\TaxiSupport\TaxiSupport\obj\Debug\MainWindow.g.cs
+C:\Users\Siro\OneDrive\Рабочий стол\TaxiSupport\TaxiSupport\obj\Debug\OrderWindow.g.cs
+C:\Users\Siro\OneDrive\Рабочий стол\TaxiSupport\TaxiSupport\obj\Debug\ViewWindow.g.cs
+C:\Users\Siro\OneDrive\Рабочий стол\TaxiSupport\TaxiSupport\obj\Debug\App.g.cs
+C:\Users\Siro\OneDrive\Рабочий стол\TaxiSupport\TaxiSupport\obj\Debug\TaxiSupport_Content.g.cs
+C:\Users\Siro\OneDrive\Рабочий стол\TaxiSupport\TaxiSupport\obj\Debug\GeneratedInternalTypeHelper.g.cs
+C:\Users\Siro\OneDrive\Рабочий стол\TaxiSupport\TaxiSupport\obj\Debug\TaxiSupport_MarkupCompile.cache
+C:\Users\Siro\OneDrive\Рабочий стол\TaxiSupport\TaxiSupport\obj\Debug\TaxiSupport_MarkupCompile.lref
+C:\Users\Siro\OneDrive\Рабочий стол\TaxiSupport\TaxiSupport\obj\Debug\AppealViewWindow.baml
+C:\Users\Siro\OneDrive\Рабочий стол\TaxiSupport\TaxiSupport\obj\Debug\CloseAppealWindow.baml
+C:\Users\Siro\OneDrive\Рабочий стол\TaxiSupport\TaxiSupport\obj\Debug\MainWindow.baml
+C:\Users\Siro\OneDrive\Рабочий стол\TaxiSupport\TaxiSupport\obj\Debug\OrderWindow.baml
+C:\Users\Siro\OneDrive\Рабочий стол\TaxiSupport\TaxiSupport\obj\Debug\ViewWindow.baml
+C:\Users\Siro\OneDrive\Рабочий стол\TaxiSupport\TaxiSupport\obj\Debug\TaxiSupport.g.resources
+C:\Users\Siro\OneDrive\Рабочий стол\TaxiSupport\TaxiSupport\obj\Debug\TaxiSupport.Properties.Resources.resources
+C:\Users\Siro\OneDrive\Рабочий стол\TaxiSupport\TaxiSupport\obj\Debug\TaxiSupport.csproj.GenerateResource.cache
+C:\Users\Siro\OneDrive\Рабочий стол\TaxiSupport\TaxiSupport\obj\Debug\TaxiSupport.csproj.CoreCompileInputs.cache
+C:\Users\Siro\OneDrive\Рабочий стол\TaxiSupport\TaxiSupport\obj\Debug\TaxiSupport.csproj.CopyComplete
+C:\Users\Siro\OneDrive\Рабочий стол\TaxiSupport\TaxiSupport\obj\Debug\TaxiSupport.exe
+C:\Users\Siro\OneDrive\Рабочий стол\TaxiSupport\TaxiSupport\obj\Debug\TaxiSupport.pdb
+C:\Users\Siro\OneDrive\Рабочий стол\TaxiSupport\TaxiSupport\obj\Debug\DriverWindow.g.cs
+C:\Users\Siro\OneDrive\Рабочий стол\TaxiSupport\TaxiSupport\obj\Debug\DriverWindow.baml
+C:\Users\Siro\OneDrive\Рабочий стол\TaxiSupport\TaxiSupport\obj\Debug\DriverOrderWindow.g.cs
+C:\Users\Siro\OneDrive\Рабочий стол\TaxiSupport\TaxiSupport\obj\Debug\DriverOrderWindow.baml
+C:\Users\Siro\OneDrive\Рабочий стол\TaxiSupport\TaxiSupport\obj\Debug\ChatWindow.g.cs
+C:\Users\Siro\OneDrive\Рабочий стол\TaxiSupport\TaxiSupport\obj\Debug\ChatWindow.baml
+C:\Users\Siro\OneDrive\Рабочий стол\TaxiSupport\TaxiSupport\obj\Debug\PriceCalculatorWindow.g.cs
+C:\Users\Siro\OneDrive\Рабочий стол\TaxiSupport\TaxiSupport\obj\Debug\PriceCalculatorWindow.baml
+C:\Users\Siro\OneDrive\Рабочий стол\TaxiSupport\TaxiSupport\obj\Debug\FAQWindow.g.cs
+C:\Users\Siro\OneDrive\Рабочий стол\TaxiSupport\TaxiSupport\obj\Debug\FAQWindow.baml
+C:\Users\Siro\OneDrive\Рабочий стол\TaxiSupport\TaxiSupport\obj\Debug\ViewingApostWindow.g.cs
+C:\Users\Siro\OneDrive\Рабочий стол\TaxiSupport\TaxiSupport\obj\Debug\ViewingApostWindow.baml
+C:\Users\Siro\OneDrive\Рабочий стол\TaxiSupport\TaxiSupport\obj\Debug\CreateAppealWindow.g.cs
+C:\Users\Siro\OneDrive\Рабочий стол\TaxiSupport\TaxiSupport\obj\Debug\OrderWindowForCreate.g.cs
+C:\Users\Siro\OneDrive\Рабочий стол\TaxiSupport\TaxiSupport\obj\Debug\CreateAppealWindow.baml
+C:\Users\Siro\OneDrive\Рабочий стол\TaxiSupport\TaxiSupport\obj\Debug\OrderWindowForCreate.baml
+C:\Users\Siro\OneDrive\Рабочий стол\TaxiSupport\TaxiSupport\obj\Debug\TaxiSupport.csproj.ResolveComReference.cache
+C:\Users\Siro\OneDrive\Рабочий стол\Новая папка (3)\TaxiSupport\TaxiSupport\bin\Debug\TaxiSupport.exe.config
+C:\Users\Siro\OneDrive\Рабочий стол\Новая папка (3)\TaxiSupport\TaxiSupport\bin\Debug\TaxiSupport.exe
+C:\Users\Siro\OneDrive\Рабочий стол\Новая папка (3)\TaxiSupport\TaxiSupport\bin\Debug\TaxiSupport.pdb
+C:\Users\Siro\OneDrive\Рабочий стол\Новая папка (3)\TaxiSupport\TaxiSupport\bin\Debug\EntityFramework.dll
+C:\Users\Siro\OneDrive\Рабочий стол\Новая папка (3)\TaxiSupport\TaxiSupport\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Siro\OneDrive\Рабочий стол\Новая папка (3)\TaxiSupport\TaxiSupport\bin\Debug\EntityFramework.xml
+C:\Users\Siro\OneDrive\Рабочий стол\Новая папка (3)\TaxiSupport\TaxiSupport\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Siro\OneDrive\Рабочий стол\Новая папка (3)\TaxiSupport\TaxiSupport\bin\Debug\ru\EntityFramework.resources.dll
+C:\Users\Siro\OneDrive\Рабочий стол\Новая папка (3)\TaxiSupport\TaxiSupport\obj\Debug\TaxiSupport.csproj.AssemblyReference.cache
+C:\Users\Siro\OneDrive\Рабочий стол\Новая папка (3)\TaxiSupport\TaxiSupport\obj\Debug\TaxiSupport.csproj.SuggestedBindingRedirects.cache
+C:\Users\Siro\OneDrive\Рабочий стол\Новая папка (3)\TaxiSupport\TaxiSupport\obj\Debug\TaxiSupport.csproj.ResolveComReference.cache
+C:\Users\Siro\OneDrive\Рабочий стол\Новая папка (3)\TaxiSupport\TaxiSupport\obj\Debug\AppealViewWindow.g.cs
+C:\Users\Siro\OneDrive\Рабочий стол\Новая папка (3)\TaxiSupport\TaxiSupport\obj\Debug\ChatWindow.g.cs
+C:\Users\Siro\OneDrive\Рабочий стол\Новая папка (3)\TaxiSupport\TaxiSupport\obj\Debug\CloseAppealWindow.g.cs
+C:\Users\Siro\OneDrive\Рабочий стол\Новая папка (3)\TaxiSupport\TaxiSupport\obj\Debug\CreateAppealWindow.g.cs
+C:\Users\Siro\OneDrive\Рабочий стол\Новая папка (3)\TaxiSupport\TaxiSupport\obj\Debug\DriverOrderWindow.g.cs
+C:\Users\Siro\OneDrive\Рабочий стол\Новая папка (3)\TaxiSupport\TaxiSupport\obj\Debug\DriverWindow.g.cs
+C:\Users\Siro\OneDrive\Рабочий стол\Новая папка (3)\TaxiSupport\TaxiSupport\obj\Debug\FAQWindow.g.cs
+C:\Users\Siro\OneDrive\Рабочий стол\Новая папка (3)\TaxiSupport\TaxiSupport\obj\Debug\MainWindow.g.cs
+C:\Users\Siro\OneDrive\Рабочий стол\Новая папка (3)\TaxiSupport\TaxiSupport\obj\Debug\OrderWindow.g.cs
+C:\Users\Siro\OneDrive\Рабочий стол\Новая папка (3)\TaxiSupport\TaxiSupport\obj\Debug\OrderWindowForCreate.g.cs
+C:\Users\Siro\OneDrive\Рабочий стол\Новая папка (3)\TaxiSupport\TaxiSupport\obj\Debug\PriceCalculatorWindow.g.cs
+C:\Users\Siro\OneDrive\Рабочий стол\Новая папка (3)\TaxiSupport\TaxiSupport\obj\Debug\ViewingApostWindow.g.cs
+C:\Users\Siro\OneDrive\Рабочий стол\Новая папка (3)\TaxiSupport\TaxiSupport\obj\Debug\ViewWindow.g.cs
+C:\Users\Siro\OneDrive\Рабочий стол\Новая папка (3)\TaxiSupport\TaxiSupport\obj\Debug\App.g.cs
+C:\Users\Siro\OneDrive\Рабочий стол\Новая папка (3)\TaxiSupport\TaxiSupport\obj\Debug\TaxiSupport_Content.g.cs
+C:\Users\Siro\OneDrive\Рабочий стол\Новая папка (3)\TaxiSupport\TaxiSupport\obj\Debug\GeneratedInternalTypeHelper.g.cs
+C:\Users\Siro\OneDrive\Рабочий стол\Новая папка (3)\TaxiSupport\TaxiSupport\obj\Debug\TaxiSupport_MarkupCompile.cache
+C:\Users\Siro\OneDrive\Рабочий стол\Новая папка (3)\TaxiSupport\TaxiSupport\obj\Debug\TaxiSupport_MarkupCompile.lref
+C:\Users\Siro\OneDrive\Рабочий стол\Новая папка (3)\TaxiSupport\TaxiSupport\obj\Debug\AppealViewWindow.baml
+C:\Users\Siro\OneDrive\Рабочий стол\Новая папка (3)\TaxiSupport\TaxiSupport\obj\Debug\ChatWindow.baml
+C:\Users\Siro\OneDrive\Рабочий стол\Новая папка (3)\TaxiSupport\TaxiSupport\obj\Debug\CloseAppealWindow.baml
+C:\Users\Siro\OneDrive\Рабочий стол\Новая папка (3)\TaxiSupport\TaxiSupport\obj\Debug\CreateAppealWindow.baml
+C:\Users\Siro\OneDrive\Рабочий стол\Новая папка (3)\TaxiSupport\TaxiSupport\obj\Debug\DriverOrderWindow.baml
+C:\Users\Siro\OneDrive\Рабочий стол\Новая папка (3)\TaxiSupport\TaxiSupport\obj\Debug\DriverWindow.baml
+C:\Users\Siro\OneDrive\Рабочий стол\Новая папка (3)\TaxiSupport\TaxiSupport\obj\Debug\FAQWindow.baml
+C:\Users\Siro\OneDrive\Рабочий стол\Новая папка (3)\TaxiSupport\TaxiSupport\obj\Debug\MainWindow.baml
+C:\Users\Siro\OneDrive\Рабочий стол\Новая папка (3)\TaxiSupport\TaxiSupport\obj\Debug\OrderWindow.baml
+C:\Users\Siro\OneDrive\Рабочий стол\Новая папка (3)\TaxiSupport\TaxiSupport\obj\Debug\OrderWindowForCreate.baml
+C:\Users\Siro\OneDrive\Рабочий стол\Новая папка (3)\TaxiSupport\TaxiSupport\obj\Debug\PriceCalculatorWindow.baml
+C:\Users\Siro\OneDrive\Рабочий стол\Новая папка (3)\TaxiSupport\TaxiSupport\obj\Debug\ViewingApostWindow.baml
+C:\Users\Siro\OneDrive\Рабочий стол\Новая папка (3)\TaxiSupport\TaxiSupport\obj\Debug\ViewWindow.baml
+C:\Users\Siro\OneDrive\Рабочий стол\Новая папка (3)\TaxiSupport\TaxiSupport\obj\Debug\TaxiSupport.g.resources
+C:\Users\Siro\OneDrive\Рабочий стол\Новая папка (3)\TaxiSupport\TaxiSupport\obj\Debug\TaxiSupport.Properties.Resources.resources
+C:\Users\Siro\OneDrive\Рабочий стол\Новая папка (3)\TaxiSupport\TaxiSupport\obj\Debug\TaxiSupport.csproj.GenerateResource.cache
+C:\Users\Siro\OneDrive\Рабочий стол\Новая папка (3)\TaxiSupport\TaxiSupport\obj\Debug\TaxiSupport.csproj.CoreCompileInputs.cache
+C:\Users\Siro\OneDrive\Рабочий стол\Новая папка (3)\TaxiSupport\TaxiSupport\obj\Debug\TaxiSupport.csproj.CopyComplete
+C:\Users\Siro\OneDrive\Рабочий стол\Новая папка (3)\TaxiSupport\TaxiSupport\obj\Debug\TaxiSupport.exe
+C:\Users\Siro\OneDrive\Рабочий стол\Новая папка (3)\TaxiSupport\TaxiSupport\obj\Debug\TaxiSupport.pdb
+C:\Users\Siro\OneDrive\Рабочий стол\TaxiSupport\TaxiSupport\bin\Debug\ru\EntityFramework.SqlServer.resources.dll

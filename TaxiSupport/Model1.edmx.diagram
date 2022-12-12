@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="176039ce4bbc40e180335d772624b645" Name="Diagram1" ZoomLevel="72">
+        <EntityTypeShape EntityType="TaxiSupportModel.Appeal" Width="1.5" PointX="18.375" PointY="6.75" FillColor="White" />
+        <EntityTypeShape EntityType="TaxiSupportModel.Applicant" Width="1.5" PointX="20.375" PointY="6" FillColor="White" />
+        <EntityTypeShape EntityType="TaxiSupportModel.Description_appeal" Width="1.5" PointX="24" PointY="6.625" FillColor="White" />
+        <EntityTypeShape EntityType="TaxiSupportModel.Driver" Width="1.5" PointX="14.5" PointY="7" FillColor="White" />
+        <EntityTypeShape EntityType="TaxiSupportModel.FAQ" Width="1.5" PointX="25.875" PointY="9.625" FillColor="White" />
+        <EntityTypeShape EntityType="TaxiSupportModel.Importance" Width="1.5" PointX="20.375" PointY="4.25" FillColor="White" />
+        <EntityTypeShape EntityType="TaxiSupportModel.Judgment" Width="1.5" PointX="23.875" PointY="4.25" FillColor="White" />
+        <EntityTypeShape EntityType="TaxiSupportModel.Message" Width="1.5" PointX="12.625" PointY="8.875" FillColor="White" />
+        <EntityTypeShape EntityType="TaxiSupportModel.Options" Width="1.5" PointX="25.75" PointY="5.625" FillColor="White" />
+        <EntityTypeShape EntityType="TaxiSupportModel.Order" Width="1.5" PointX="16.375" PointY="5.125" FillColor="White" />
+        <EntityTypeShape EntityType="TaxiSupportModel.Order_status" Width="1.5" PointX="14.5" PointY="5.125" FillColor="White" />
+        <EntityTypeShape EntityType="TaxiSupportModel.PayType" Width="1.5" PointX="12.75" PointY="5.125" FillColor="White" />
+        <EntityTypeShape EntityType="TaxiSupportModel.Post" Width="1.5" PointX="22.25" PointY="9.5" FillColor="White" />
+        <EntityTypeShape EntityType="TaxiSupportModel.Response_to_the_appeal" Width="1.5" PointX="22.25" PointY="6.375" FillColor="White" />
+        <EntityTypeShape EntityType="TaxiSupportModel.Status_of_the_driver_s_account" Width="1.5" PointX="12.625" PointY="7" FillColor="White" />
+        <EntityTypeShape EntityType="TaxiSupportModel.Statuses" Width="1.5" PointX="22.125" PointY="4.25" FillColor="White" />
+        <EntityTypeShape EntityType="TaxiSupportModel.Tariff" Width="1.5" PointX="25.625" PointY="3.375" FillColor="White" />
+        <EntityTypeShape EntityType="TaxiSupportModel.Tariff_zone" Width="1.5" PointX="24" PointY="9.5" FillColor="White" />
+        <EntityTypeShape EntityType="TaxiSupportModel.Type_problem" Width="1.5" PointX="18.375" PointY="4.875" FillColor="White" />
+        <EntityTypeShape EntityType="TaxiSupportModel.Type_Sender" Width="1.5" PointX="25.625" PointY="7.625" FillColor="White" />
+        <EntityTypeShape EntityType="TaxiSupportModel.User" Width="1.5" PointX="20.375" PointY="8.5" FillColor="White" />
+        <AssociationConnector Association="TaxiSupportModel.FK_Appeal_Applicant" />
+        <AssociationConnector Association="TaxiSupportModel.FK_Appeal_Importance" ManuallyRouted="false" >
+        </AssociationConnector>
+        <AssociationConnector Association="TaxiSupportModel.FK_Appeal_Order" />
+        <AssociationConnector Association="TaxiSupportModel.FK_Appeal_Statuses" ManuallyRouted="false" >
+        </AssociationConnector>
+        <AssociationConnector Association="TaxiSupportModel.FK_Appeal_Type_problem" />
+        <AssociationConnector Association="TaxiSupportModel.FK_Appeal_User" />
+        <AssociationConnector Association="TaxiSupportModel.FK_Response_to_the_appeal_Appeal" ManuallyRouted="false" >
+        </AssociationConnector>
+        <AssociationConnector Association="TaxiSupportModel.FK_Description_appeal_User" ManuallyRouted="false" >
+        </AssociationConnector>
+        <AssociationConnector Association="TaxiSupportModel.FK_Driver_Status_of_the_driver_s_account" />
+        <AssociationConnector Association="TaxiSupportModel.FK_Order_Driver" />
+        <AssociationConnector Association="TaxiSupportModel.FK_Response_to_the_appeal_Judgment" />
+        <AssociationConnector Association="TaxiSupportModel.FK_Messeng_Order" ManuallyRouted="false" >
+        </AssociationConnector>
+        <AssociationConnector Association="TaxiSupportModel.FK_Messeng_Type_Sender" ManuallyRouted="true" >
+          <ConnectorPoint PointX="25.625" PointY="9.22068359375" />
+          <ConnectorPoint PointX="24.833333333333332" PointY="9.22068359375" />
+          <ConnectorPoint PointX="24.666666666666668" PointY="9.22068359375" />
+          <ConnectorPoint PointX="22.067130153722776" PointY="9.22068359375" />
+          <ConnectorPoint PointX="22.067130153722776" PointY="11.661122569950916" />
+          <ConnectorPoint PointX="14.21875" PointY="11.661122569950916" />
+          <ConnectorPoint PointX="14.21875" PointY="10.057444661458334" />
+          <ConnectorPoint PointX="14.125" PointY="10.057444661458334" />
+        </AssociationConnector>
+        <AssociationConnector Association="TaxiSupportModel.FK_Order_Order_status" />
+        <AssociationConnector Association="TaxiSupportModel.FK_Order_PayType" />
+        <AssociationConnector Association="TaxiSupportModel.FK_Order_Tariff" />
+        <AssociationConnector Association="TaxiSupportModel.FK_Order_Tariff_zone" ManuallyRouted="true" >
+          <ConnectorPoint PointX="24" PointY="10.406005512123398" />
+          <ConnectorPoint PointX="23.625" PointY="11.662985026041667" />
+          <ConnectorPoint PointX="23.625" PointY="11.518616536458332" />
+          <ConnectorPoint PointX="22.150463487056108" PointY="11.518616536458332" />
+          <ConnectorPoint PointX="21.983796820389443" PointY="11.518616536458332" />
+          <ConnectorPoint PointX="18.25" PointY="11.518616536458332" />
+          <ConnectorPoint PointX="17.875" PointY="8.1353006945832931" />
+        </AssociationConnector>
+        <AssociationConnector Association="TaxiSupportModel.FK_User_Post" />
+        <AssociationConnector Association="TaxiSupportModel.FK_Response_to_the_appeal_User" />
+        <AssociationConnector Association="TaxiSupportModel.Description_of_the_appeals" ManuallyRouted="true" >
+          <ConnectorPoint PointX="19.875" PointY="9.7153074895833349" />
+          <ConnectorPoint PointX="20.3125" PointY="9.7153074895833349" />
+          <ConnectorPoint PointX="20.3125" PointY="8.4375" />
+          <ConnectorPoint PointX="21.976129028721942" PointY="8.4375" />
+          <ConnectorPoint PointX="21.976129028721942" PointY="6.3125" />
+          <ConnectorPoint PointX="22.041666666666668" PointY="6.3124999999999991" />
+          <ConnectorPoint PointX="22.208333333333332" PointY="6.3125" />
+          <ConnectorPoint PointX="24.75" PointY="6.3125" />
+          <ConnectorPoint PointX="24.75" PointY="6.625" />
+        </AssociationConnector>
+        <AssociationConnector Association="TaxiSupportModel.Driver_s_tariffs" ManuallyRouted="true" >
+          <ConnectorPoint PointX="15.25" PointY="7" />
+          <ConnectorPoint PointX="15.25" PointY="6.78318359375" />
+          <ConnectorPoint PointX="16.201823370306982" PointY="6.78318359375" />
+          <ConnectorPoint PointX="16.201823370306982" PointY="4.1875" />
+          <ConnectorPoint PointX="17.072919166666669" PointY="4.1874999999999991" />
+          <ConnectorPoint PointX="17.239585833333333" PointY="4.1875" />
+          <ConnectorPoint PointX="25.53125" PointY="4.1875" />
+          <ConnectorPoint PointX="25.53125" PointY="4.695670945312493" />
+          <ConnectorPoint PointX="25.625" PointY="4.695670945312493" />
+        </AssociationConnector>
+        <AssociationConnector Association="TaxiSupportModel.Order_Options" ManuallyRouted="true" >
+          <ConnectorPoint PointX="25.75" PointY="6.110341796875" />
+          <ConnectorPoint PointX="23.8125" PointY="6.110341796875" />
+          <ConnectorPoint PointX="23.8125" PointY="5.9375" />
+          <ConnectorPoint PointX="22.958333333333332" PointY="5.9374999999999991" />
+          <ConnectorPoint PointX="22.791666666666668" PointY="5.9375" />
+          <ConnectorPoint PointX="20.1850410278507" PointY="5.9375" />
+          <ConnectorPoint PointX="20.1850410278507" PointY="4.8125" />
+          <ConnectorPoint PointX="17.239585833333333" PointY="4.8124999999999991" />
+          <ConnectorPoint PointX="17.072919166666669" PointY="4.8125" />
+          <ConnectorPoint PointX="16.76562625" PointY="4.8125" />
+          <ConnectorPoint PointX="16.76562625" PointY="5.125" />
+        </AssociationConnector>
+        <EntityTypeShape EntityType="TaxiSupportModel.Blocking_the_driver" Width="1.5" PointX="10.875" PointY="9" FillColor="White" />
+        <AssociationConnector Association="TaxiSupportModel.FK_Blocking_the_driver_Driver" />
+        <AssociationConnector Association="TaxiSupportModel.FK_Blocking_the_driver_User" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

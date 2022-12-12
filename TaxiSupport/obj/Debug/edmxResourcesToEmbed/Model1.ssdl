@@ -1,0 +1,696 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="Хранилище TaxiSupportModel" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="Appeal">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="status" Type="int" Nullable="false" />
+    <Property Name="applicant" Type="int" Nullable="false" />
+    <Property Name="problem type" Type="int" Nullable="false" />
+    <Property Name="date" Type="datetime" Nullable="false" />
+    <Property Name="order" Type="int" Nullable="false" />
+    <Property Name="importance" Type="int" Nullable="false" />
+    <Property Name="description" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="id user" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Applicant">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="name" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="phone" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="email" Type="nvarchar(max)" />
+  </EntityType>
+  <EntityType Name="Blocking the driver">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" Nullable="false" />
+    <Property Name="id driver" Type="int" Nullable="false" />
+    <Property Name="id user" Type="int" Nullable="false" />
+    <Property Name="time" Type="datetime" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Description appeal">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="description" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="date" Type="datetime" Nullable="false" />
+    <Property Name="user" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Description of the appeals">
+    <Key>
+      <PropertyRef Name="id description" />
+      <PropertyRef Name="id appeal" />
+    </Key>
+    <Property Name="id description" Type="int" Nullable="false" />
+    <Property Name="id appeal" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Driver">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="name" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="surname" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="patronymic" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="age" Type="int" Nullable="false" />
+    <Property Name="car brand and model" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="rating" Type="int" Nullable="false" />
+    <Property Name="car number" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="id status account" Type="int" Nullable="false" />
+    <Property Name="employee's comment" Type="nvarchar(max)" />
+    <Property Name="phone" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="image" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="loyalty" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Driver's tariffs">
+    <Key>
+      <PropertyRef Name="id driver" />
+      <PropertyRef Name="id tariff" />
+    </Key>
+    <Property Name="id driver" Type="int" Nullable="false" />
+    <Property Name="id tariff" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="FAQ">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="title" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="description" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="date" Type="date" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Importance">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="description" Type="nvarchar" MaxLength="50" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Judgment">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="description" Type="nvarchar(max)" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Message">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="description" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="id type sender" Type="int" Nullable="false" />
+    <Property Name="time" Type="datetime" Nullable="false" />
+    <Property Name="id order" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Options">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="description" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="price" Type="decimal" Precision="18" Scale="0" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Order">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="starting point" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="end point" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="customer name" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="customer phone" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="price" Type="decimal" Precision="18" Scale="2" Nullable="false" />
+    <Property Name="driver" Type="int" Nullable="false" />
+    <Property Name="time" Type="datetime" Nullable="false" />
+    <Property Name="tariff" Type="int" Nullable="false" />
+    <Property Name="description" Type="nvarchar(max)" />
+    <Property Name="number" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="status" Type="int" Nullable="false" />
+    <Property Name="id paytype" Type="int" Nullable="false" />
+    <Property Name="driver point" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="mileage" Type="decimal" Precision="18" Scale="4" Nullable="false" />
+    <Property Name="tariff zone" Type="int" Nullable="false" />
+    <Property Name="loyalty for the order" Type="int" Nullable="false" />
+    <Property Name="travel time" Type="nvarchar(max)" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Order Options">
+    <Key>
+      <PropertyRef Name="id order" />
+      <PropertyRef Name="id option" />
+    </Key>
+    <Property Name="id order" Type="int" Nullable="false" />
+    <Property Name="id option" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Order status">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="description" Type="nvarchar" MaxLength="50" Nullable="false" />
+  </EntityType>
+  <EntityType Name="PayType">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="description" Type="nvarchar" MaxLength="50" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Post">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="description" Type="nvarchar(max)" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Response to the appeal">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="id user" Type="int" Nullable="false" />
+    <Property Name="responce" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="id appeal" Type="int" Nullable="false" />
+    <Property Name="date" Type="datetime" Nullable="false" />
+    <Property Name="id judgment" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Status of the driver's account">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="description" Type="nvarchar" MaxLength="50" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Statuses">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="description" Type="nvarchar" MaxLength="50" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Tariff">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="description" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="price" Type="decimal" Precision="18" Scale="0" Nullable="false" />
+    <Property Name="image" Type="nvarchar(max)" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Tariff zone">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="description" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="minPrice" Type="decimal" Precision="18" Scale="0" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Type problem">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="description" Type="nvarchar" MaxLength="50" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Type Sender">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="description" Type="nvarchar" MaxLength="50" Nullable="false" />
+  </EntityType>
+  <EntityType Name="User">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="login" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="password" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="post" Type="int" Nullable="false" />
+    <Property Name="profile name" Type="nvarchar(max)" Nullable="false" />
+  </EntityType>
+  <Association Name="FK_Appeal_Applicant">
+    <End Role="Applicant" Type="Self.Applicant" Multiplicity="1" />
+    <End Role="Appeal" Type="Self.Appeal" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Applicant">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="Appeal">
+        <PropertyRef Name="applicant" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Appeal_Importance">
+    <End Role="Importance" Type="Self.Importance" Multiplicity="1" />
+    <End Role="Appeal" Type="Self.Appeal" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Importance">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="Appeal">
+        <PropertyRef Name="importance" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Appeal_Order">
+    <End Role="Order" Type="Self.Order" Multiplicity="1" />
+    <End Role="Appeal" Type="Self.Appeal" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Order">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="Appeal">
+        <PropertyRef Name="order" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Appeal_Statuses">
+    <End Role="Statuses" Type="Self.Statuses" Multiplicity="1" />
+    <End Role="Appeal" Type="Self.Appeal" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Statuses">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="Appeal">
+        <PropertyRef Name="status" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Appeal_Type problem">
+    <End Role="Type problem" Type="Self.Type problem" Multiplicity="1" />
+    <End Role="Appeal" Type="Self.Appeal" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Type problem">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="Appeal">
+        <PropertyRef Name="problem type" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Appeal_User">
+    <End Role="User" Type="Self.User" Multiplicity="1" />
+    <End Role="Appeal" Type="Self.Appeal" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="User">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="Appeal">
+        <PropertyRef Name="id user" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Blocking the driver_Driver">
+    <End Role="Driver" Type="Self.Driver" Multiplicity="1" />
+    <End Role="Blocking the driver" Type="Self.Blocking the driver" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Driver">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="Blocking the driver">
+        <PropertyRef Name="id driver" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Blocking the driver_User">
+    <End Role="User" Type="Self.User" Multiplicity="1" />
+    <End Role="Blocking the driver" Type="Self.Blocking the driver" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="User">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="Blocking the driver">
+        <PropertyRef Name="id user" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Description appeal_User">
+    <End Role="User" Type="Self.User" Multiplicity="1" />
+    <End Role="Description appeal" Type="Self.Description appeal" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="User">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="Description appeal">
+        <PropertyRef Name="user" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Description of the appeals_Appeal">
+    <End Role="Appeal" Type="Self.Appeal" Multiplicity="1" />
+    <End Role="Description of the appeals" Type="Self.Description of the appeals" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Appeal">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="Description of the appeals">
+        <PropertyRef Name="id appeal" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Description of the appeals_Description appeal">
+    <End Role="Description appeal" Type="Self.Description appeal" Multiplicity="1" />
+    <End Role="Description of the appeals" Type="Self.Description of the appeals" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Description appeal">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="Description of the appeals">
+        <PropertyRef Name="id description" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Driver_Status of the driver's account">
+    <End Role="Status of the driver's account" Type="Self.Status of the driver's account" Multiplicity="1" />
+    <End Role="Driver" Type="Self.Driver" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Status of the driver's account">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="Driver">
+        <PropertyRef Name="id status account" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Driver's tariffs_Driver">
+    <End Role="Driver" Type="Self.Driver" Multiplicity="1" />
+    <End Role="Driver's tariffs" Type="Self.Driver's tariffs" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Driver">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="Driver's tariffs">
+        <PropertyRef Name="id driver" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Driver's tariffs_Tariff">
+    <End Role="Tariff" Type="Self.Tariff" Multiplicity="1" />
+    <End Role="Driver's tariffs" Type="Self.Driver's tariffs" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Tariff">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="Driver's tariffs">
+        <PropertyRef Name="id tariff" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Messeng_Order">
+    <End Role="Order" Type="Self.Order" Multiplicity="1" />
+    <End Role="Message" Type="Self.Message" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Order">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="Message">
+        <PropertyRef Name="id order" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Messeng_Type Sender">
+    <End Role="Type Sender" Type="Self.Type Sender" Multiplicity="1" />
+    <End Role="Message" Type="Self.Message" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Type Sender">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="Message">
+        <PropertyRef Name="id type sender" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Order Options_Options">
+    <End Role="Options" Type="Self.Options" Multiplicity="1" />
+    <End Role="Order Options" Type="Self.Order Options" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Options">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="Order Options">
+        <PropertyRef Name="id option" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Order Options_Order">
+    <End Role="Order" Type="Self.Order" Multiplicity="1" />
+    <End Role="Order Options" Type="Self.Order Options" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Order">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="Order Options">
+        <PropertyRef Name="id order" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Order_Driver">
+    <End Role="Driver" Type="Self.Driver" Multiplicity="1" />
+    <End Role="Order" Type="Self.Order" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Driver">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="Order">
+        <PropertyRef Name="driver" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Order_Order status">
+    <End Role="Order status" Type="Self.Order status" Multiplicity="1" />
+    <End Role="Order" Type="Self.Order" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Order status">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="Order">
+        <PropertyRef Name="status" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Order_PayType">
+    <End Role="PayType" Type="Self.PayType" Multiplicity="1" />
+    <End Role="Order" Type="Self.Order" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="PayType">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="Order">
+        <PropertyRef Name="id paytype" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Order_Tariff">
+    <End Role="Tariff" Type="Self.Tariff" Multiplicity="1" />
+    <End Role="Order" Type="Self.Order" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Tariff">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="Order">
+        <PropertyRef Name="tariff" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Order_Tariff zone">
+    <End Role="Tariff zone" Type="Self.Tariff zone" Multiplicity="1" />
+    <End Role="Order" Type="Self.Order" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Tariff zone">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="Order">
+        <PropertyRef Name="tariff zone" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Response to the appeal_Appeal">
+    <End Role="Appeal" Type="Self.Appeal" Multiplicity="1" />
+    <End Role="Response to the appeal" Type="Self.Response to the appeal" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Appeal">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="Response to the appeal">
+        <PropertyRef Name="id appeal" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Response to the appeal_Judgment">
+    <End Role="Judgment" Type="Self.Judgment" Multiplicity="1" />
+    <End Role="Response to the appeal" Type="Self.Response to the appeal" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Judgment">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="Response to the appeal">
+        <PropertyRef Name="id judgment" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Response to the appeal_User">
+    <End Role="User" Type="Self.User" Multiplicity="1" />
+    <End Role="Response to the appeal" Type="Self.Response to the appeal" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="User">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="Response to the appeal">
+        <PropertyRef Name="id user" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_User_Post">
+    <End Role="Post" Type="Self.Post" Multiplicity="1" />
+    <End Role="User" Type="Self.User" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Post">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="User">
+        <PropertyRef Name="post" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="Хранилище TaxiSupportModelContainer">
+    <EntitySet Name="Appeal" EntityType="Self.Appeal" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Applicant" EntityType="Self.Applicant" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Blocking the driver" EntityType="Self.Blocking the driver" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Description appeal" EntityType="Self.Description appeal" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Description of the appeals" EntityType="Self.Description of the appeals" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Driver" EntityType="Self.Driver" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Driver's tariffs" EntityType="Self.Driver's tariffs" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="FAQ" EntityType="Self.FAQ" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Importance" EntityType="Self.Importance" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Judgment" EntityType="Self.Judgment" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Message" EntityType="Self.Message" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Options" EntityType="Self.Options" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Order" EntityType="Self.Order" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Order Options" EntityType="Self.Order Options" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Order status" EntityType="Self.Order status" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="PayType" EntityType="Self.PayType" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Post" EntityType="Self.Post" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Response to the appeal" EntityType="Self.Response to the appeal" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Status of the driver's account" EntityType="Self.Status of the driver's account" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Statuses" EntityType="Self.Statuses" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Tariff" EntityType="Self.Tariff" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Tariff zone" EntityType="Self.Tariff zone" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Type problem" EntityType="Self.Type problem" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Type Sender" EntityType="Self.Type Sender" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="User" EntityType="Self.User" Schema="dbo" store:Type="Tables" />
+    <AssociationSet Name="FK_Appeal_Applicant" Association="Self.FK_Appeal_Applicant">
+      <End Role="Applicant" EntitySet="Applicant" />
+      <End Role="Appeal" EntitySet="Appeal" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Appeal_Importance" Association="Self.FK_Appeal_Importance">
+      <End Role="Importance" EntitySet="Importance" />
+      <End Role="Appeal" EntitySet="Appeal" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Appeal_Order" Association="Self.FK_Appeal_Order">
+      <End Role="Order" EntitySet="Order" />
+      <End Role="Appeal" EntitySet="Appeal" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Appeal_Statuses" Association="Self.FK_Appeal_Statuses">
+      <End Role="Statuses" EntitySet="Statuses" />
+      <End Role="Appeal" EntitySet="Appeal" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Appeal_Type problem" Association="Self.FK_Appeal_Type problem">
+      <End Role="Type problem" EntitySet="Type problem" />
+      <End Role="Appeal" EntitySet="Appeal" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Appeal_User" Association="Self.FK_Appeal_User">
+      <End Role="User" EntitySet="User" />
+      <End Role="Appeal" EntitySet="Appeal" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Blocking the driver_Driver" Association="Self.FK_Blocking the driver_Driver">
+      <End Role="Driver" EntitySet="Driver" />
+      <End Role="Blocking the driver" EntitySet="Blocking the driver" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Blocking the driver_User" Association="Self.FK_Blocking the driver_User">
+      <End Role="User" EntitySet="User" />
+      <End Role="Blocking the driver" EntitySet="Blocking the driver" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Description appeal_User" Association="Self.FK_Description appeal_User">
+      <End Role="User" EntitySet="User" />
+      <End Role="Description appeal" EntitySet="Description appeal" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Description of the appeals_Appeal" Association="Self.FK_Description of the appeals_Appeal">
+      <End Role="Appeal" EntitySet="Appeal" />
+      <End Role="Description of the appeals" EntitySet="Description of the appeals" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Description of the appeals_Description appeal" Association="Self.FK_Description of the appeals_Description appeal">
+      <End Role="Description appeal" EntitySet="Description appeal" />
+      <End Role="Description of the appeals" EntitySet="Description of the appeals" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Driver_Status of the driver's account" Association="Self.FK_Driver_Status of the driver's account">
+      <End Role="Status of the driver's account" EntitySet="Status of the driver's account" />
+      <End Role="Driver" EntitySet="Driver" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Driver's tariffs_Driver" Association="Self.FK_Driver's tariffs_Driver">
+      <End Role="Driver" EntitySet="Driver" />
+      <End Role="Driver's tariffs" EntitySet="Driver's tariffs" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Driver's tariffs_Tariff" Association="Self.FK_Driver's tariffs_Tariff">
+      <End Role="Tariff" EntitySet="Tariff" />
+      <End Role="Driver's tariffs" EntitySet="Driver's tariffs" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Messeng_Order" Association="Self.FK_Messeng_Order">
+      <End Role="Order" EntitySet="Order" />
+      <End Role="Message" EntitySet="Message" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Messeng_Type Sender" Association="Self.FK_Messeng_Type Sender">
+      <End Role="Type Sender" EntitySet="Type Sender" />
+      <End Role="Message" EntitySet="Message" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Order Options_Options" Association="Self.FK_Order Options_Options">
+      <End Role="Options" EntitySet="Options" />
+      <End Role="Order Options" EntitySet="Order Options" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Order Options_Order" Association="Self.FK_Order Options_Order">
+      <End Role="Order" EntitySet="Order" />
+      <End Role="Order Options" EntitySet="Order Options" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Order_Driver" Association="Self.FK_Order_Driver">
+      <End Role="Driver" EntitySet="Driver" />
+      <End Role="Order" EntitySet="Order" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Order_Order status" Association="Self.FK_Order_Order status">
+      <End Role="Order status" EntitySet="Order status" />
+      <End Role="Order" EntitySet="Order" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Order_PayType" Association="Self.FK_Order_PayType">
+      <End Role="PayType" EntitySet="PayType" />
+      <End Role="Order" EntitySet="Order" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Order_Tariff" Association="Self.FK_Order_Tariff">
+      <End Role="Tariff" EntitySet="Tariff" />
+      <End Role="Order" EntitySet="Order" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Order_Tariff zone" Association="Self.FK_Order_Tariff zone">
+      <End Role="Tariff zone" EntitySet="Tariff zone" />
+      <End Role="Order" EntitySet="Order" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Response to the appeal_Appeal" Association="Self.FK_Response to the appeal_Appeal">
+      <End Role="Appeal" EntitySet="Appeal" />
+      <End Role="Response to the appeal" EntitySet="Response to the appeal" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Response to the appeal_Judgment" Association="Self.FK_Response to the appeal_Judgment">
+      <End Role="Judgment" EntitySet="Judgment" />
+      <End Role="Response to the appeal" EntitySet="Response to the appeal" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Response to the appeal_User" Association="Self.FK_Response to the appeal_User">
+      <End Role="User" EntitySet="User" />
+      <End Role="Response to the appeal" EntitySet="Response to the appeal" />
+    </AssociationSet>
+    <AssociationSet Name="FK_User_Post" Association="Self.FK_User_Post">
+      <End Role="Post" EntitySet="Post" />
+      <End Role="User" EntitySet="User" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>
